@@ -1,6 +1,6 @@
 # Magic Scatter World for Houdini
 
-**Version:** 1.3.0 — Houdini port of the Maya Magic Scatter World brush-based surface scattering tool.
+**Version:** 1.3.0 — Houdini Magic Scatter World brush-based surface scattering tool.
 
 ---
 
