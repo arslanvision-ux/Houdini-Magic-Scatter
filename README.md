@@ -4,7 +4,10 @@
 
 ---
 
-**Demonstration:** [Watch on Google Drive](https://drive.google.com/file/d/1XBM2NiO13Ed2wULodtJtUxfXL6xUl877/view?usp=drive_link)
+**Demonstration:**
+
+[![Demonstration Video](images/screenshot.jpg)](https://drive.google.com/file/d/1XBM2NiO13Ed2wULodtJtUxfXL6xUl877/view?usp=drive_link)
+*Click the image above to watch the demonstration video on Google Drive*
 
 **Video Tutorials:** [Visit my YouTube Channel](https://www.youtube.com/@mamgicscatterworld)
 
