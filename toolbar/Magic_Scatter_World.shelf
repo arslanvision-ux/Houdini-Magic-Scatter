@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <tool name="sp_scatter_launch" label="Magic Scatter World" icon="sp_brush.png">
+    <helpText><![CDATA[
+== Magic Scatter World (floating window) ==
+
+Opens Magic Scatter World as a standalone floating window.
+
+Usage
+~~~~~
+1. Select a surface geometry node  **Set Surface**
+2. Select asset geometry nodes  **Add Asset(s)**
+3. Click **Create Network** and give it a name
+4. Click **PAINT** and drag across the surface in the viewport
+5. Use **ERASE** to remove instances locally
+6. **CLEAR ALL** resets the paint mask
+
+All data is saved automatically with the .hip file.
+    ]]></helpText>
+    <script scriptType="python"><![CDATA[import importlib, scatter_tool.launcher
+importlib.reload(scatter_tool.launcher)
+scatter_tool.launcher.launch()]]></script>
+  </tool>
+
+  <tool name="ivy_scatter_launch" label="Ivy Generation" icon="ivy.png">
+    <helpText><![CDATA[
+== Ivy Generation (floating window) ==
+
+Opens Ivy Generation as a standalone floating window.
+
+Usage
+~~~~~
+1. Select a surface geometry node  **Set Surface**
+2. Click **Create Network** and give it a name
+3. Open the **Ivy Generation** tab and click **Create Ivy Network**
+4. Tweak parameters and use **Regenerate** to recook
+    ]]></helpText>
+    <script scriptType="python"><![CDATA[import importlib, scatter_tool.launcher
+importlib.reload(scatter_tool.launcher)
+scatter_tool.launcher.launch_ivy()]]></script>
+  </tool>
+
+  <tool name="crawling_ivy_launch" label="Crawling Ivy" icon="ivy.png">
+    <helpText><![CDATA[
+== Crawling Ivy ==
+
+Opens the Crawling Ivy panel  a procedural surface-crawling ivy system.
+
+Usage
+~~~~~
+1. Select a surface geometry node and click **Set Surface**
+2. Click **Create Crawling Ivy** to generate the network
+3. Adjust growth parameters (seeds, strand length, gravity, branching, etc.)
+4. Click **Regenerate** to re-cook with the new values
+5. Use presets (Sparse / Dense / Climbing / Hanging / Wild / Tendrils) as
+   starting points
+6. Click **Bake Crawling Ivy** to write the cache to disk
+    ]]></helpText>
+    <script scriptType="python"><![CDATA[import importlib, scatter_tool.launcher
+importlib.reload(scatter_tool.launcher)
+scatter_tool.launcher.launch_crawling_ivy()]]></script>
+  </tool>
+
+  <toolshelf name="magic_scatter_world" label="Magic Scatter World">
+    <memberTool name="sp_scatter_launch"/>
+    <memberTool name="ivy_scatter_launch"/>
+    <memberTool name="crawling_ivy_launch"/>
+  </toolshelf>
+</shelfDocument>

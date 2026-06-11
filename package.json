@@ -1,0 +1,35 @@
+{
+    "name": "Magic_Scatter_World",
+    "version": "1.0.0",
+
+    "description": "Magic Scatter World – brush-based surface scattering tool for Houdini.",
+
+    "author": "Aidar Nagimov (Maya original)  / Houdini portable by Arslan Abdusalyamov",
+
+    "recommendedHoudiniVersion": "20.0",
+
+    "variables": {
+        "MAGIC_SCATTER_WORLD_ROOT": "$HOUDINI_PACKAGE_PATH"
+    },
+
+    "env": [
+        {
+            "PYTHONPATH": {
+                "method": "prepend",
+                "value":  "$HOUDINI_PACKAGE_PATH/scripts"
+            }
+        },
+        {
+            "HOUDINI_TOOLBAR_PATH": {
+                "method": "prepend",
+                "value":  "$HOUDINI_PACKAGE_PATH/toolbar"
+            }
+        },
+        {
+            "HOUDINI_UI_ICON_PATH": {
+                "method": "prepend",
+                "value":  "$HOUDINI_PACKAGE_PATH/icons"
+            }
+        }
+    ]
+}
