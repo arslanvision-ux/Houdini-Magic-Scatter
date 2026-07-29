@@ -11,7 +11,7 @@
 
 **Video Tutorials:** [Visit my YouTube Channel](https://www.youtube.com/@mamgicscatterworld)
 
-Buy Me a Coffee: https://buymeacoffee.com/arslansvision
+Buy Me a Coffee: buymeacoffee.com/arslansvision/magic-scatter
 
 ---
 
